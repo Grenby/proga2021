@@ -12,7 +12,7 @@ int main(int argc, char **argv)
     double lw = 0.3;
 
 
-    double lc = 0.01;
+    double lc = 0.1;
 
 
 
