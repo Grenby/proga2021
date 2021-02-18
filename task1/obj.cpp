@@ -1,32 +1,19 @@
-// -----------------------------------------------------------------------------
-//
-//  Gmsh C++ tutorial 13
-//
-//  Remeshing an STL file without an underlying CAD model
-//
-// -----------------------------------------------------------------------------
-
 #include <set>
 #include <cmath>
-#include <iostream>
 #include <gmsh.h>
+#include <iostream>
 
 int main(int argc, char **argv)
 {
-
     gmsh::initialize();
 
     gmsh::model::add("t13");
 
-    // Let's merge an STL mesh that we would like to remesh (from the parent
-    // directory):
-
     try {
-        gmsh::merge("bird.stl");
+        gmsh::merge("bullfinch.stl");
         std::cout<<"load STL"<<'\n';
     } catch(...) {
         std::cout<<"Could not load STL mesh: bye!"<<'\n';
-        gmsh::logger::write("Could not load STL mesh: bye!");
         gmsh::finalize();
         return 0;
     }
