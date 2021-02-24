@@ -80,7 +80,7 @@ int main(int argc, char **argv)
     }
 
     gmsh::model::geo::addSurfaceLoop({1, 2, 3, 4}, 1);
-   gmsh::model::geo::addSurfaceLoop({5, 6, 7, 8}, 2);
+    gmsh::model::geo::addSurfaceLoop({5, 6, 7, 8}, 2);
     gmsh::model::geo::addVolume({1,2});
 
     gmsh::model::geo::synchronize();
@@ -96,4 +96,3 @@ int main(int argc, char **argv)
 
     return 0;
 }
-
