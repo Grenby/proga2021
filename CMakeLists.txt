@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 #task 2
-add_executable(F task2/first.cpp)
+add_executable(F task2/animation.cpp)
 
 find_package(VTK REQUIRED)
 include(${VTK_USE_FILE})
