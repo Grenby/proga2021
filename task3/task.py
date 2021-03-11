@@ -2,7 +2,7 @@ from fenics import *
 from mshr import *
 
 T = 1  # final time
-num_steps = 1000  # number of time steps
+num_steps = 2000  # number of time steps
 dt = T / num_steps  # time step size
 mu = .8  # dynamic viscosity
 rho = 1  # density
